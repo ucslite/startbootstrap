@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<style>
+	.flip {
+    height: 199px;
+    width: 300px;
+    margin: 0 auto;
+}
+.flip img {
+    width: 300px;
+    height: auto;
+}
+.flip .back {
+    background: #2184cd;
+    color: #fff;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="flip"> 
+    <div class="front"> 
+        <img src="/path/to/image.jpg" alt="" />
+    </div> 
+    <div class="back">
+        <h3>Some Text in the Back!</h3>
+    </div> 
+</div>
+<script src="js/jquery.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/ jquery.flip.min.js"></script>
+<script>
+$(function(){
+    $(".flip").flip({
+        trigger: 'hover'
+    });
+});
+</script>
+
+</body>
+</html>
